@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard - Flask App{% endblock %}
+
+{% block content %}
+<div class="dashboard-header">
+    <h1 class="welcome">Welcome, {{ username }}!</h1>
+    <a href="{{ url_for('logout') }}" class="logout-btn">Logout</a>
+</div>
+
+<div class="dashboard-content">
+    <h2>Dashboard</h2>
+    <p>You have successfully logged in to your account. This is your personal dashboard where you can manage your profile and access various features.</p>
+    <p>Your session is active and secure. You can logout anytime using the logout button above.</p>
+</div>
+{% endblock %}
